@@ -23,11 +23,12 @@ private:
     int max_cilindro = 199;             //! Posições máxima do cilindro
     int min_cilindro = 0;               //! Posição mínima do cilindro
 public:
-    disco(int, std::vector<int>);
-    int tamanho_lista_de_espera(void);
+    disco(int, std::vector<int>);    
     std::vector<int>::iterator acessar_elemento_inicial(void);
+    std::vector<int>::iterator acessar_elemento_final(void);
     int posicao_cabecote_inicial(void);
-    int distancia(std::vector<int>::iterator, std::vector<int>::iterator);
+    int posicao_maxima_cilindro(void);
+    int possicao_minima_cilindro(void);
 };
 
 #endif

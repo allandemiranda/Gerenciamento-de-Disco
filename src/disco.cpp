@@ -25,21 +25,21 @@ disco::disco(int p_inicial, std::vector <int> fila){
 }
 
 /**
- * @brief Função para verificar quantos elementos existe na lista de espera
- * 
- * @return int Quantidade de elementos na lista de espera
- */
-int disco::tamanho_lista_de_espera(void){
-    return lista_de_espera.size();
-}
-
-/**
  * @brief Função para apontar para o início do vetor de espera
  * 
  * @return std::vector<int>::iterator Ponteiro para o início
  */
 std::vector<int>::iterator disco::acessar_elemento_inicial(void){
     return lista_de_espera.begin();
+}
+
+/**
+ * @brief Função para apontar para o final do vetor de espera
+ * 
+ * @return std::vector<int>::iterator Ponteiro para o final
+ */
+std::vector<int>::iterator disco::acessar_elemento_final(void){
+    return lista_de_espera.end();
 }
 
 /**
@@ -52,16 +52,19 @@ int disco::posicao_cabecote_inicial(void){
 }
 
 /**
- * @brief Medir distancia entre dois pontos
+ * @brief Função para obter posiçaõ máxima do cilindro
  * 
- * @param p_inicial Ponteiro inicial
- * @param p_final Ponteiro final
- * @return int Distância entre os pontos
+ * @return int Posição
  */
-int disco::distancia(std::vector<int>::iterator p_inicial, std::vector<int>::iterator p_final){
-    int resposta = p_final - p_inicial;
-    if(resposta<0){
-        resposta = resposta * (-1);
-    }
-    return resposta;
+int disco::posicao_maxima_cilindro(void){
+    return max_cilindro;
+}
+
+/**
+ * @brief Função para retornar posição mínima do cilindro
+ * 
+ * @return int POsição
+ */
+int disco::possicao_minima_cilindro(void){
+    return  min_cilindro;
 }

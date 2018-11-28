@@ -15,6 +15,7 @@
 #include "../include/disco.h"
 #include "../include/render.h"
 #include "../include/fcfs.h"
+#include "../include/sstf.h"
 
 int main(int argc, char const *argv[])
 {
@@ -43,6 +44,9 @@ int main(int argc, char const *argv[])
     fcfs metodo_1(Disc_);
     metodo_1.resolvendo();
     //! Simulação do método SSTF
+    sstf metodo_2(Disc_);
+    metodo_2.resolvendo();
+    //! Simulação método
 
     return 0;
 }

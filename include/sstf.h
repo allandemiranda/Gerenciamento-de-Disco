@@ -23,6 +23,7 @@ private:
     std::vector <int> ordem_acessada;   //! Ordem de cilindros acessados
     std::vector <int> lista_de_espera;  //! Lista de espera para acessar os cilindros do disco
     int posicao_atual;                  //! Posição atual do cabeçote
+    int quant_cilindros;                //! Quantidade de cilindros no disco
 public:
     sstf(disco _disc);
     void resolvendo(void);

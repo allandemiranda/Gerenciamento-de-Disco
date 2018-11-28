@@ -36,9 +36,9 @@ void render::print(void){
     std::cout << "        Ordem: ";
     for(int i(0); i<ordem.size(); ++i){
         if(i == (ordem.size()-1)){
-            std::cout << i;
+            std::cout << ordem[i];
         } else {
-            std::cout << i << ", ";
+            std::cout << ordem[i] << ", ";
         }    
     }
     std::cout << std::endl;

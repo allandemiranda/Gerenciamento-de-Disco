@@ -17,6 +17,7 @@
 #include "../include/fcfs.h"
 #include "../include/sstf.h"
 #include "../include/scand.h"
+#include "../include/scanc.h"
 
 int main(int argc, char const *argv[])
 {
@@ -50,6 +51,9 @@ int main(int argc, char const *argv[])
     //! Simulação método SCAN considerando o bit de sentido como DESCE
     scand metodo_3(Disc_);
     metodo_3.resolvendo();
+    //! Simulação método SCAN considerando o bit de sentido como SOBE
+    scanc metodo_4(Disc_);
+    metodo_4.resolvendo();
 
     return 0;
 }

@@ -9,6 +9,8 @@
  * 
  */
 
+#include <vector>
+#include <iterator>
 #include "../include/disco.h"
 
 /**

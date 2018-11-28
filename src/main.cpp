@@ -16,6 +16,7 @@
 #include "../include/render.h"
 #include "../include/fcfs.h"
 #include "../include/sstf.h"
+#include "../include/scand.h"
 
 int main(int argc, char const *argv[])
 {
@@ -46,7 +47,9 @@ int main(int argc, char const *argv[])
     //! Simulação do método SSTF
     sstf metodo_2(Disc_);
     metodo_2.resolvendo();
-    //! Simulação método
+    //! Simulação método SCAN considerando o bit de sentido como DESCE
+    scand metodo_3(Disc_);
+    metodo_3.resolvendo();
 
     return 0;
 }

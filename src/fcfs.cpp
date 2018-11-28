@@ -9,6 +9,8 @@
  * 
  */
 
+#include <vector>
+#include <iterator>
 #include "../include/fcfs.h"
 #include "../include/disco.h"
 #include "../include/render.h"

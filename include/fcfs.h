@@ -12,7 +12,6 @@
 #define FCFS_H
 
 #include <vector>
-#include <iterator>
 #include "../include/disco.h"
 
 class fcfs

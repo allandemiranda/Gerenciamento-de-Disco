@@ -13,7 +13,6 @@
 #define SSTF_H
 
 #include <vector>
-#include <iterator>
 #include "../include/disco.h"
 
 class sstf

@@ -9,6 +9,8 @@
  * 
  */
 
+#include <vector>
+#include <iterator>
 #include "../include/sstf.h"
 #include "../include/disco.h"
 #include "../include/render.h"

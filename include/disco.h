@@ -13,7 +13,6 @@
 #define DISCO_H
 
 #include <vector>
-#include <iterator>
 
 class disco
 {

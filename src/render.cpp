@@ -33,7 +33,7 @@ render::render(std::string nome, std::vector <int> lista, int resposta){
  */
 void render::print(void){
     std::cout << nome_metodo << std::endl;
-    std::cout << "        Ordem: ";
+    std::cout << "      Ordem: ";
     for(int i(0); i<ordem.size(); ++i){
         if(i == (ordem.size()-1)){
             std::cout << ordem[i];
@@ -42,5 +42,5 @@ void render::print(void){
         }    
     }
     std::cout << std::endl;
-    std::cout << "        Cilindros: " << cilindros << std::endl;
+    std::cout << "      Cilindros: " << cilindros << std::endl;
 }
